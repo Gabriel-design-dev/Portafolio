@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/desarrollador.css">
+<link rel="stylesheet" href="css/cabecera.css">
+<link rel="stylesheet" href="css/caja_mas_foter.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Perfil</title>
+  </head>
+  <body>
+    <!--CABECERA-->
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            <img src="IMG/logo.jpg" width="120px" height="50px">
+        </div>
+        <div class="nav-items">
+           <li><a id="playButton" href="index.html">Inicio</a></li>
+           <li><a href="descarga.html">Descarga Proyectos</a></li>
+           <li><a id="playButton" href="crud.html">Serie Crud PHP</a></li>
+          <!-- <li><a id="playButton" href="crud.html">Serie Crud Python</a></li>-->
+           <li><a href="desarrollador.html">Desarrollador</a></li>
+        
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+     </nav>
+     <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = ()=>{
+          items.classList.add("active");
+          menuBtn.classList.add("hide");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = ()=>{
+          items.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          searchBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          form.classList.remove("active");
+          cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = ()=>{
+          form.classList.add("active");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+     </script>
+     <!------>
+  <h2 class="titulo">Desarrollador</h2>
+<div class="center-container">
+    <div class="person">
+      <div class="containeras">
+        <div class="containeras-inner">
+          <div class="circle"></div>
+          <img class="imga" src="IMG/gab.jpg">
+        </div>
+      </div>
+      <div class="divider"></div>
+      <h2 class="name">Ing Gabriel</h2>
+      <p class="title">Desarrollador</p>
+    </div>
+    <!--
+    <div class="person">
+      <div class="containeras">
+        <div class="containeras-inner">
+          <div class="circle"></div>
+          <img src="{{ asset('images/cristiano.png') }}" />
+          
+        </div>
+      </div>
+    <div class="divider"></div>
+      <h2 class="name">Dev. Cristiano</h2>
+      <p class="title">Desarrollador Fronted</p>
+    </div>
+    -->
+</div>
+<!----FOOOTEEER----->
+<footer>
+    <div class="main-contente">
+      <div class="left boxe">
+        <h2 class="texto">Sobre El Sitio</h2>
+        <div class="contente">
+            <p class="tx">El Sitio esta enfocado a enseñar, ayudar y a orientar acerca de los video tutoriales sobre la programacion en diferentes tipos
+                de lenguaje como tambien podras descargar los proyectos realizados en cada video tutorial. Donde tambien podras descargar proyectos ya completos con un 
+                solo click para adaparlos a tu Sistema. Un Gusto tenerte aqui.
+              </p>
+          <div class="social">
+            <a href=""><span class="fab fa-facebook-f"></span></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a href="https://www.instagram.com/gabriel_freestlye/"><span class="fab fa-instagram"></span></a>
+            <a href="https://www.youtube.com/c/GABRIELHD-ING-SISTEMAS/videos"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="center boxe">
+        <h2 class="texto">Contactos</h2>
+        <div class="contente">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="texto">La paz</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="texto"></span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="texto">gs59679@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="right boxe">
+        <h2 clas="texto">Deja Tu Mensaje</h2>
+        <div class="contente">
+          <!---formulario de mensajes-->
+          <form action="#" method="post">
+            <div class="email">
+              <div class="texto-form">Correo Electronico</div>
+              <input type="email" required name="txtEmail">
+            </div>
+            <div class="msg">
+              <div class="texto-form">Mensaje</div>
+              <textarea rows="2" cols="25" required name="txtMensaje"></textarea>
+            </div>
+            <div class="btne">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <center>
+        <span class="credit">Desarrollado Por <a href="https://www.codingnepalweb.com">GABRIEL-OMC-ING-SISTEMAS</a> | </span>
+        <span class="far fa-copyright"></span><span> 2023 Derechos Reservados</span>
+      </center>
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+  <script src="js/scrollreveal.js"></script>
+  <script>
+    Swal.fire(
+    "Bienvenido a Desarrollador",
+      'Informacion Sobre el Creador del Sitio',
+        'Deacuerdo'
+      )
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/caja-video.css">
+    <link rel="stylesheet" href="css/cabecera.css">
+    <link rel="stylesheet" href="css/portada.css">
+    <link rel="stylesheet" href="css/caja_mas_foter.css">
+    <link rel="stylesheet" href="css/transicion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Gabriel HDS</title>
+      <!---TRANSICIONES-->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/trans.css') }}">
+      <link rel="stylesheet" href="https://unpkg.com/transition-style">
+      <link rel="stylesheet" href="https://unpkg.com/transition-style/transition.circles.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/transition-style/transition.squares.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/transition-style/transition.polygons.min.css">
+     <script>
+      $('body').setAttribute('transition-style','in:circle:bottom-right')
+      javascript:(function(){var a=document.createElement("link");a.rel="stylesheet";a.href="https://unpkg.com/transition-style";document.head.append(a);})();
+    </script>
+      <!---------FIN TRANSICION-->
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+           <img src="IMG/logo.jpg" width="120px" height="50px">
+        </div>
+        <div class="nav-items">
+           <li><a id="playButton" href="index.html">Inicio</a></li>
+           <li> <a style="color:rgb(218, 50, 50);" href="https://www.youtube.com/c/GABRIELHD-ING-SISTEMAS/videos"><span class="fab fa-youtube"></span> Canal de Youtube</a></li>
+           <li><a href="descarga.html">Descarga Proyectos</a></li>
+           <li><a id="playButton" href="crud.html">Serie Crud PHP</a></li>
+          <!-- <li><a id="playButton" href="crud.html">Serie Crud Python</a></li>-->
+           <li><a href="desarrollador.html">Desarrollador</a></li>
+        
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+     </nav>
+       <!--cabecera fin-->
+<div class="imagen-portada"></div>
+<br>
+<div transition-style class="--in-custom">
+  <div class="caja-portada">
+    <div class="texto">Gabriel HDS</div>
+    <div class="parrafo">Programacion, Redes, Sistemas Operativos</div>
+</div>
+ <div class="content12">
+    <div class="text">Videos Tutoriales</div>
+    <div class="pe">¡Comencemos!</div>
+</div>
+</div>
+    <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = ()=>{
+          items.classList.add("active");
+          menuBtn.classList.add("hide");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = ()=>{
+          items.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          searchBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          form.classList.remove("active");
+          cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = ()=>{
+          form.classList.add("active");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+     </script>
+  <br><br>
+    <div class="containere info2js">
+        <!----1--> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QO4lBskfH7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="texta">
+          <h2 class="h22">Como hacer un Login (Validación de datos) con PYTHON FLASK y MySQL</h2>
+          <p class="pa text-center"> <b> Archivos Utilizados en el Tutorial:</b>
+            <br>
+          <a href="https://getbootstrap.com/docs/4.0/components/forms/">Formulario Bootstrap</a>
+            <br>
+            <a href="https://getbootstrap.com/docs/4.0/components/alerts/">Alertas Bootstrap</a>
+             <div class="text-center">
+              <a class="btn btn-success " href="https://www.mediafire.com/file/is59ft0hq2apy4v/login-python.rar/file">Descargar Login </a>
+             </div>
+        </div>
+      </div>
+      <div class="containere infojs">
+        <!----1--> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkotA0tvewQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="texta">
+          <h2 class="h22">Como hacer un Login con Roles, Privilegios de Usuario (Multi-Usuario) en Python Flask y MySQL</h2>
+          <p class="pa text-center"> <b> Archivos Utilizados en el Tutorial:</b>
+            <br>
+          <a href="https://getbootstrap.com/docs/4.0/components/forms/">Formulario Bootstrap</a>
+            <br>
+            <a href="https://getbootstrap.com/docs/4.0/components/alerts/">Alertas Bootstrap</a>
+             <div class="text-center">
+              <a class="btn btn-success " href="https://www.mediafire.com/file/q2y45cy7wgqrskg/login+con+roles+python.rar/file">Descargar Login Multi-Usuario</a>
+             </div>
+        </div>
+      </div>
+      <div class="containere infojs">
+        <!----1--> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/z1GQlM5rk2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="texta">
+          <h2 class="h22">Como compartir INTERNET DE MI PC A UN CELULAR FACIL y RAPIDO (SIN NINGUN PROGRAMA) por Ethernet</h2>
+          <p class="pa text-center"> <b> Archivos Utilizados en el Tutorial:</b>
+            <br>
+            Requisitos: <br>
+            - Android 5 para arriba <br>
+            - Tener Activo el modo <b>Desarrollador</b> <br>
+            <b> NOTA:</b> En el celular debe estar marcado la casilla de <b>Depuracion USB</b>
+             <div class="text-center">
+              <a class="btn btn-success " href="https://www.mediafire.com/file/yo3qjaxy6333avq/internet+pc+a+android.rar/file">Descargar Archivo</a>
+             </div>
+        </div>
+      </div>
+      <!--2--> <br>
+   <div class="canal text-center">
+        <a class="canal-y" href="https://www.youtube.com/c/GABRIELHD-ING-SISTEMAS/videos"><span class="fab fa-youtube"></span> Canal de Youtube</a>
+      </div><br>
+      <!----FOOOTEEER----->
+      <footer>
+        <div class="main-contente">
+          <div class="left boxe">
+            <h2 class="texto-form">Sobre El Sitio</h2>
+            <div class="contente">
+              <p class="tx">El Sitio esta enfocado a enseñar, ayudar y a orientar acerca de los video tutoriales sobre la programacion en diferentes tipos
+                de lenguaje como tambien podras descargar los proyectos realizados en cada video tutorial. Donde tambien podras descargar proyectos ya completos con un 
+                solo click para adaparlos a tu Sistema. Un Gusto tenerte aqui.
+              </p>
+              <div class="social">
+                <a href=""><span class="fab fa-facebook-f"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="https://www.instagram.com/gabriel_freestlye/"><span class="fab fa-instagram"></span></a>
+                <a href="https://www.youtube.com/c/GABRIELHD-ING-SISTEMAS/videos"><span class="fab fa-youtube"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="center boxe">
+            <h2 class="texto">Contactos</h2>
+            <div class="contente">
+              <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="texto">La paz</span>
+              </div>
+              <div class="phone">
+                <span class="fas fa-phone-alt"></span>
+                <span class="texto"></span>
+              </div>
+              <div class="email">
+                <span class="fas fa-envelope"></span>
+                <span class="texto">gs59679@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="right boxe">
+            <h2 clas="texto">Deja Tu Mensaje</h2>
+            <div class="contente">
+              <!---formulario de mensajes-->
+              <form action="#" method="post">
+                <div class="email">
+                  <div class="texto-form">Correo Electronico</div>
+                  <input type="email" required name="txtEmail">
+                </div>
+                <div class="msg">
+                  <div class="texto-form">Mensaje</div>
+                  <textarea rows="2" cols="25" required name="txtMensaje"></textarea>
+                </div>
+                <div class="btne">
+                  <button type="submit">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <center>
+            <span class="credit">Desarrollado Por <a href="https://www.codingnepalweb.com">GABRIEL-OMC-ING-SISTEMAS</a> | </span>
+            <span class="far fa-copyright"></span><span> 2023 Derechos Reservados</span>
+          </center>
+        </div>
+      </footer>
+      <script src="js/script.js"></script>
+      <script src="js/index.js"></script>
+      <script src="js/scripts.js"></script>
+      <script src="js/scrollreveal.js"></script>
+</body>
+</html>
