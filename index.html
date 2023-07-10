@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="css/portada.css">
     <link rel="stylesheet" href="css/caja_mas_foter.css">
     <link rel="stylesheet" href="css/transicion.css">
+    <link rel="stylesheet" href="css/portafolio.css">
+    <link rel="stylesheet" href="css/estudios.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
     <title>Gabriel HDS</title>
       <!---TRANSICIONES-->
       <link rel="stylesheet" href="{{ url_for('static', filename='css/trans.css') }}">
@@ -26,7 +30,8 @@
     </script>
       <!---------FIN TRANSICION-->
 </head>
-<body>
+<body style="background-color: #f2f2f2;">
+ 
     <nav>
         <div class="menu-icon">
            <span class="fas fa-bars"></span>
@@ -37,10 +42,9 @@
         <div class="nav-items">
            <li><a id="playButton" href="index.html">Inicio</a></li>
            <li> <a style="color:rgb(218, 50, 50);" href="https://www.youtube.com/c/GABRIELHD-ING-SISTEMAS/videos"><span class="fab fa-youtube"></span> Canal de Youtube</a></li>
-           <li><a href="descarga.html">Descarga Proyectos</a></li>
-           <li><a id="playButton" href="crud.html">Serie Crud PHP</a></li>
+         <li><a href="https://drive.google.com/file/d/1CN_oX7rqhtN2YNjY2pKeF6MYgMysW472/view?usp=drive_link">Descargar Cv</a></li>
+           <!--<li><a id="playButton" href="crud.html">Serie Crud PHP</a></li>-->
           <!-- <li><a id="playButton" href="crud.html">Serie Crud Python</a></li>-->
-           <li><a href="desarrollador.html">Desarrollador</a></li>
         
         </div>
         <div class="search-icon">
@@ -51,16 +55,22 @@
         </div>
      </nav>
        <!--cabecera fin-->
-<div class="imagen-portada"></div>
+<div class="imagen-portada">
+    <div class="img-port">
+    <img class="img-portada" src="IMG/portada.jpg" width="400px" height="430px">
+</div>
+</div>
 <br>
 <div transition-style class="--in-custom">
   <div class="caja-portada">
-    <div class="texto">Gabriel HDS</div>
-    <div class="parrafo">Programacion, Redes, Sistemas Operativos</div>
-</div>
+    <div class="parrafos">Hola me Presento!</div>
+    <div class="texto">Gabriel Mamani Camayo</div>
+    <div class="parrafo"> Ing. de Sistemas que se dedica al area del Desarrollo Web,<br> 
+        Diseño, Administracion, Soporte Tecnico, Marketing Digital</div>
+</div><br><br>
  <div class="content12">
-    <div class="text">Videos Tutoriales</div>
-    <div class="pe">¡Comencemos!</div>
+    <div class="text">Informacion Personal</div>
+    <div class="pe">¡Bienvenido!</div>
 </div>
 </div>
     <script>
@@ -90,65 +100,312 @@
         }
      </script>
   <br><br>
-    <div class="containere info2js">
+  <div transition-style class="--in-custom">
+  <section class="">
+    <div class="containere">
         <!----1--> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QO4lBskfH7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img class="imagen" src="IMG/perfil.jpg"width="100px" height="500px">
         <div class="texta">
-          <h2 class="h22">Como hacer un Login (Validación de datos) con PYTHON FLASK y MySQL</h2>
-          <p class="pa text-center"> <b> Archivos Utilizados en el Tutorial:</b>
+          <h2 class="text-center h22">Presentacion</h2>
+          <p class="pa text-justify"> Me llamo Gabriel y soy apasionado por el mundo de la tecnología 
+            y en constante búsqueda de oportunidades para seguir aprendiendo y desarrollando mis 
+            habilidades. Tengo  Conocimientos en Auxiliar de oficina, Desarrollo de Software, 
+            bases de datos, redes, sistemas operativos, Soporte Técnico, 
+            Docencia en el ámbito educativo. me considero una persona con habilidades 
+            para enfrentar retos y solucionar problemas de manera efectiva. 
+            Me caracterizo por ser un trabajador dedicado y comprometido, capaz de trabajar en
+             equipo y adaptarme a situaciones nuevas. estoy dispuesto a poner en práctica todo 
+             lo aprendido para aportar al crecimiento y éxito de la organización. <br>
+             <p class="text-center h22"> <b> Datos Personales</b></p>
+            <b> Fecha de Nacimiento:</b> 20 de agosto de 1998 <br>
+             <b> C.I:</b><span style="margin-left: 5px;"></span> 10920696 LP. <br>
+             <b> Nacionalidad: </b><span style="margin-left: 5px;"></span> Boliviano <br>
+             <b> Domicilio: </b><span style="margin-left: 5px;"></span> Zona Copacabana - Av. Punata - LA PAZ - BOLIVIA <br>
+             <b> Celular: </b><span style="margin-left: 5px;"></span> 78819752 <br>
+             <b> Correo Electronico : </b><span style="margin-left: 5px;"></span> gs59679@gmail.com <br>
+            </b>
             <br>
-          <a href="https://getbootstrap.com/docs/4.0/components/forms/">Formulario Bootstrap</a>
-            <br>
-            <a href="https://getbootstrap.com/docs/4.0/components/alerts/">Alertas Bootstrap</a>
              <div class="text-center">
-              <a class="btn btn-success " href="https://www.mediafire.com/file/is59ft0hq2apy4v/login-python.rar/file">Descargar Login </a>
+              <a class="btn btn-success" href="https://wa.me/78819752?text=Buenos%20dias">WhatsApp</a>
+              <a class="btn btn-danger " href="https://drive.google.com/file/d/1CN_oX7rqhtN2YNjY2pKeF6MYgMysW472/view?usp=drive_link">Descargar CV</a>
              </div>
         </div>
       </div>
-      <div class="containere infojs">
-        <!----1--> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkotA0tvewQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="texta">
-          <h2 class="h22">Como hacer un Login con Roles, Privilegios de Usuario (Multi-Usuario) en Python Flask y MySQL</h2>
-          <p class="pa text-center"> <b> Archivos Utilizados en el Tutorial:</b>
-            <br>
-          <a href="https://getbootstrap.com/docs/4.0/components/forms/">Formulario Bootstrap</a>
-            <br>
-            <a href="https://getbootstrap.com/docs/4.0/components/alerts/">Alertas Bootstrap</a>
-             <div class="text-center">
-              <a class="btn btn-success " href="https://www.mediafire.com/file/q2y45cy7wgqrskg/login+con+roles+python.rar/file">Descargar Login Multi-Usuario</a>
-             </div>
+    </section>
+    
+    <h2 id="funciones" class="text-center subtitulo">Areas de Trabajo</h2>
+  </div>
+    <!---PROYECTOS REALIZADOS-->
+    <div transition-style class="--in-custom">
+<section  class="tarjetitas1">
+  <div class="tarjetitas2">
+    <div class="icono3 text-center">
+      <span class="fa fa-laptop-code"></span>
+      
+    </div>
+    <div class="contenido3">
+      <p class="text-center">Desarrollo </p>
+      <h3 class="text-center">Desarrollo de Paginas Web, Sistemas de Invetarios, Control<br></h3>
+     <!---<p>Descripción de la tarjeta 1.</p>
+      <a href="#">Enlace 1</a>-->
+    </div>
+  </div>
+  <div class="tarjetitas2">
+    <div class="icono3 text-center">
+      <span class="fa fa-wifi"></span>
+     
+    </div>
+ 
+    <div class="contenido3">
+      <p class="text-center">Telecomunicaciones</p>
+      <h3 class="text-center">Redes e Infraestructura<br></h3>
+     <!---<p>Descripción de la tarjeta 1.</p>
+      <a href="#">Enlace 1</a>-->
+    </div>
+  </div>
+  <div class="tarjetitas2">
+    <div class="icono3 text-center">
+      <span class="far fa-folder-open"></span>
+      
+    </div>
+    <div class="contenido3">
+      <p class="text-center">Administracion</p>
+      <h3 class="text-center">Auxiliar Administrativo<br></h3>
+     <!---<p>Descripción de la tarjeta 1.</p>
+      <a href="#">Enlace 1</a>-->
+    </div>
+  </div>
+  <div class="tarjetitas2">
+    <div class="icono3 text-center">
+      <span class="fa fa-poll"></span>
+    </div>
+    <div class="contenido3">
+      <p class="text-center">Marketing Digital</p>
+      <h3 class="text-center">Analisis y Mercadeo, Diseño Grafico, Publicista.<br></h3>
+     <!---<p>Descripción de la tarjeta 1.</p>
+      <a href="#">Enlace 1</a>-->
+    </div>
+    <br>
+  </div>
+</section><br>
+</div>
+<!---FORMACION ACADEMICA-->
+    <section class="seccion-estudios">
+    <div class="contenedor">
+        <div class="caja"><br>
+            <h3 class=" subtitulo text-center"><span class="fa-solid fa-user-graduate iconos"></span> Formacion Academica</h3>
+          <div class="subcaja">
+            <!-- Contenido de la primera caja -->
+            <h3 class="text-center subcaja-h3">Bachiller en Humanidades</h3>
+            <p class="text-center">Unidad Educativa 6 de marzo Tarde
+              de 1º de primera a 4º de secundaria 2003 - 2015 <br>
+              <b>Titulo Profesional :</b> Bachiller en Humanidades<br>
+              <b>Titulo Academico :</b> Si<br>
+              <b>Titulo en Provision Nacional :</b> Si<br>
+            </p>
+          </div><br>
+          <div class="subcaja">
+            <!-- Contenido de la primera caja -->
+            <h3 class="text-center subcaja-h3">Tec. Sup. Analista de Sistemas</h3>
+            <p class="text-center">Universidad Publica de El Alto
+              Carrera de Ingeniería de Sistemas
+              Analista de Sistemas 
+              (2016-2022)
+              Dirección: Villa Esperanza - Ciudad de El alto 
+              2016 - 2022 <br>
+              <b>Titulo Profesional :</b> Analista de Sistemas<br>
+              <b>Titulo Academico :</b> Si<br>
+              <b>Titulo en Provision Nacional :</b> Si<br>
+            </p>
+          </div><br>
+          <div class="subcaja">
+            <!-- Contenido de la primera caja -->
+            <h3 class="text-center subcaja-h3">Ing. de Sistemas</h3>
+            <p class="text-center">Universidad Publica de El Alto
+              Carrera de Ingeniería de Sistemas
+              Licenciatura en Ingenieria de Sistemas
+              (2016-2023)
+              Dirección: Villa Esperanza - Ciudad de El alto 
+              2016 - 2023 <br>
+              <b>Titulo Profesional :</b> Lic. Ingenieria de Sistemas<br>
+              <b>Titulo Academico :</b> Egresado<br>
+              <b>Titulo en Provision Nacional :</b> No<br>
+            </p>
+          </div><br>
+        </div>
+        <div class="caja"><br>
+            <h3 class=" subtitulo text-center"><span class="fa-solid fa-briefcase iconos"></span> Experiencia Laboral</h3>
+          <div class="subcaja">
+            <!-- Contenido de la segunda caja -->
+            <h3 class="text-center subcaja-h3">Pasantia</h3>
+            <p><b>Institucion :</b> Posgrado (Upea)<br>
+              <b>Cargo Ocupacion :</b> Redes y Mantenimiento<br>
+              <b>Fecha de Inicio :</b> 02/02/2021<br>
+              <b>Fecha de Finalizacion :</b> 30/07/2021<br></p>
+          </div><br>
+          <div class="subcaja">
+            <!-- Contenido de la segunda caja -->
+            <h3 class="text-center subcaja-h3">Contrato</h3>
+            <p><b>Institucion :</b> La Española<br>
+              <b>Cargo Ocupacion :</b> Soporte Tecnico <br>
+              <b>Fecha de Inicio :</b> 02/08/2021<br>
+              <b>Fecha de Finalizacion :</b> 20/02/2022<br></p>
+          </div><br>
+          <div class="subcaja">
+            <!-- Contenido de la segunda caja -->
+            <h3 class="text-center subcaja-h3">Contrato</h3>
+            <p><b>Institucion :</b> Carrera Ingenieria de Sistemas<br>
+              <b>Cargo Ocupacion :</b> Auxiliar de Laboratorio<br>
+              <b>Fecha de Inicio :</b> 15/03/2022<br>
+              <b>Fecha de Finalizacion :</b> 29/12/2022<br></p>
+          </div><br>
         </div>
       </div>
-      <div class="containere infojs">
-        <!----1--> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/z1GQlM5rk2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="texta">
-          <h2 class="h22">Como compartir INTERNET DE MI PC A UN CELULAR FACIL y RAPIDO (SIN NINGUN PROGRAMA) por Ethernet</h2>
-          <p class="pa text-center"> <b> Archivos Utilizados en el Tutorial:</b>
-            <br>
-            Requisitos: <br>
-            - Android 5 para arriba <br>
-            - Tener Activo el modo <b>Desarrollador</b> <br>
-            <b> NOTA:</b> En el celular debe estar marcado la casilla de <b>Depuracion USB</b>
-             <div class="text-center">
-              <a class="btn btn-success " href="https://www.mediafire.com/file/yo3qjaxy6333avq/internet+pc+a+android.rar/file">Descargar Archivo</a>
-             </div>
-        </div>
+</section>
+<!-------SECCION 3-->
+<!---PROYECTOS REALIZADOS-->
+<section class="tarjetitas3">
+  <div class="tarjetitas4">
+    <div class="icono2 text-center">
+      <span class="fa fa-briefcase"></span>
+    </div>
+    <div class="contenido2">
+      <p class="text-center">5</p>
+      <h3 class="text-center">PROYECTOS <br>TRABAJADOS</h3>
+      <!--<p>Descripción de la tarjeta 1.</p>
+      <a href="#">Enlace 1</a>-->
+    </div>
+  </div>
+  <div class="tarjetitas4">
+    <div class="icono2 text-center">
+      <span class="far fa-check-circle"></span>
+      
+      
+    </div>
+ 
+    <div class="contenido2">
+      <p class="text-center">3</p>
+      <h3 class="text-center">PROYECTOS <br>TERMINADOS</h3>
+      <!--<p>Descripción de la tarjeta 1.</p>
+      <a href="#">Enlace 1</a>-->
+    </div>
+  </div>
+  <div class="tarjetitas4">
+    <div class="icono2 text-center">
+      <span class="fa fa-user-graduate"></span>
+      
+    </div>
+    <div class="contenido2">
+      <p class="text-center">28</p>
+      <h3 class="text-center">SEMINARIOS<br>Y CURSOS</h3>
+      <!--<p>Descripción de la tarjeta 1.</p>
+      <a href="#">Enlace 1</a>-->
+    </div>
+  </div>
+  <div class="tarjetitas4">
+    <div class="icono2 text-center">
+      <span class="fa fa-award"></span>
+    </div>
+    <div class="contenido2">
+      <p class="text-center">7</p>
+      <h3 class="text-center">DIPLOMAS Y<br>CERTIFICACIONES</h2>
+      <!--<p>Descripción de la tarjeta 1.</p>
+      <a href="#">Enlace 1</a>-->
+    </div>
+    <br>
+  </div>
+</section><br>
+<!---SECCION FUNCIONES-->
+<h2 class="text-center subtitulo">Trabajos y Proyectos Realizados</h2> <br>
+<section class="tarjetas" >
+    <div class="tarjeta">
+      <div class="imagen">
+        <img src="IMG/Machine.jpg" alt="Imagen 1">
       </div>
-      <!--2--> <br>
-   <div class="canal text-center">
-        <a class="canal-y" href="https://www.youtube.com/c/GABRIELHD-ING-SISTEMAS/videos"><span class="fab fa-youtube"></span> Canal de Youtube</a>
-      </div><br>
+      <div class="contenido">
+        <h3 class="text-center">Modelo de Deteccion De Ataques Phishing</h3>
+        <p class="text-justify">Se creo un modelo para la deteccion de ataques phishing con tecnicas de machine learning
+          para reducir las estafas y engaños por parte de los atacante informaticos. El Modelo fue realizado Python y Machine Learning 
+        </p><br><br>
+        <a class="btn btn-success" href="#">Concluido</a>
+      </div>
+    </div>
+    <div class="tarjeta">
+      <div class="imagen">
+        <img src="IMG/cancer.jpg" alt="Imagen 2">
+      </div>
+      <div class="contenido">
+        <h3 class="text-center">Modelo de Deteccion de cancer bucal Usando tecnicas de machine learning</h3>
+        <p class="text-justify">Se esta Desarrollando un modelo para la deteccion de ataques phishing con tecnicas de machine learning
+          para reducir las estafas y engaños por parte de los atacante informaticos. El Modelo fue realizado en Python y Machine Learning 
+        </p>
+        <a class="btn btn-warning" href="#">En Proceso</a>
+      </div>
+    </div>
+    <div class="tarjeta">
+      <div class="imagen">
+        <img src="IMG/afiches.png" alt="Imagen 3">
+      </div>
+      <div class="contenido">
+        <h3 class="text-center">Diseño de Afiches, Panfletos</h3>
+        <p class="text-justify">Se desarrollo Afiches, Panfletos para Promocionar cursos y Seminarios para el Instituto Corea.
+          El diseño fue realizado en Photoshop CC y Canva.
+        </p><br><br><br><br>
+        <a class="btn btn-success" href="#">Concluido</a>
+      </div>
+    </div>
+    <div class="tarjeta">
+      <div class="imagen">
+        <img src="IMG/BELA.jpg" alt="Imagen 4">
+      </div>
+      <div class="contenido">
+        <h3 class="text-center">Diseño de </h3>
+        <p class="text-justify">Se desarrollo un sistema de informacion de control de planillas para la institucion "BELA" para el control de todo 
+          el personal administrativo. El sistema fue creado con el lenguaje de programacion Php.
+        </p><br><br>
+        <a class="btn btn-success" href="#">Concluido</a>
+      </div>
+    </div>
+  </section>
+  <!--------RECONOCIMIENTOS-->
+  <h2 class="text-center subtitulo">Reconocimientos</h2>
+  <section class="tarjetitas1">
+    <div class="tarjetitas5">
+      <div class="icono3 text-center">
+        <span class="fa fa-school"></span>
+        
+      </div>
+      <div class="contenido3">
+        <p class="text-center">Expositor</p>
+        <h3 class="text-center">del curso de "ENSAMBLAJE Y MANTENIMIENTO DE COMPUTADORAS" con una duración de 25 horas académicas  fecha de realización 15 y 16 de diciembre  
+          del 2022 en los predios de la Carrera Ingeniería de Sistemas.<br></h3>
+       <!---<p>Descripción de la tarjeta 1.</p>
+        <a href="#">Enlace 1</a>-->
+      </div>
+    </div>
+    <div class="tarjetitas5">
+      <div class="icono3 text-center">
+        <span class="fa fa-school"></span>
+        
+      </div>
+   
+      <div class="contenido3">
+        <p class="text-center">Expositor</p>
+        <h3 class="text-center">del curso de "REDES BASICO" con una duración de 10 horas académicas fecha de realización 3 de
+           diciembre del 2022 en los predios de la Carrera Ingeniería de Sistemas..<br></h3>
+       <!---<p>Descripción de la tarjeta 1.</p>
+        <a href="#">Enlace 1</a>-->
+      </div>
+    </div>
+  </section>
+</div>
       <!----FOOOTEEER----->
       <footer>
         <div class="main-contente">
           <div class="left boxe">
-            <h2 class="texto-form">Sobre El Sitio</h2>
+            <h2 class="texto-form">INFORMACION</h2>
             <div class="contente">
-              <p class="tx">El Sitio esta enfocado a enseñar, ayudar y a orientar acerca de los video tutoriales sobre la programacion en diferentes tipos
-                de lenguaje como tambien podras descargar los proyectos realizados en cada video tutorial. Donde tambien podras descargar proyectos ya completos con un 
-                solo click para adaparlos a tu Sistema. Un Gusto tenerte aqui.
+              <p class="tx">Si estás buscando ayuda con sistemas, aplicaciones web, problemas de soporte técnico, infraestructura, asistencia administrativa, diseño, proyectos de grado, tesis y más, no dudes en contactarme. Estoy disponible para brindarte asistencia en estas áreas y trabajar contigo para resolver cualquier desafío que puedas tener. ¡No dudes en comunicarte conmigo y juntos encontraremos la solución adecuada para tus necesidades!
               </p>
               <div class="social">
                 <a href=""><span class="fab fa-facebook-f"></span></a>
@@ -167,7 +424,7 @@
               </div>
               <div class="phone">
                 <span class="fas fa-phone-alt"></span>
-                <span class="texto"></span>
+                <span class="texto">+591 78819752</span>
               </div>
               <div class="email">
                 <span class="fas fa-envelope"></span>
@@ -202,9 +459,10 @@
           </center>
         </div>
       </footer>
+     
       <script src="js/script.js"></script>
-      <script src="js/index.js"></script>
+      
       <script src="js/scripts.js"></script>
-      <script src="js/scrollreveal.js"></script>
+      <script src="https://kit.fontawesome.com/7325a27477.js" crossorigin="anonymous"></script>
 </body>
 </html>
