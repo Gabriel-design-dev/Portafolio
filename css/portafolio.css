@@ -188,6 +188,7 @@ object-fit: cover;
         margin: 8px;
         margin-top: 0px;
         margin-bottom: 20px;
+        margin-left: -10%;
       }
     .tarjeta {
       width: calc(50% - 10px);
@@ -213,13 +214,13 @@ object-fit: cover;
       margin-bottom: 20px;
     }
     .tarjetitas3{
-      margin-top: -60px;
+      margin-top: 20px;
     }
     .tarjetitas1 > .tarjetitas2 {
       flex: 0 0 calc(100% - 40px);
     }
     .tarjetitas4{
-      flex: 0 0 calc(70% - 30px);
+      flex: 0 0 calc(60% - 40px);
     }
     .tarjetitas1 > .tarjetitas5 {
       flex: 0 0 calc(100% - 40px);
