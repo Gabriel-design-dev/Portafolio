@@ -284,6 +284,7 @@ footer{
     font-size: 25px;
     font-family: 'Kaushan Script', cursive;
 }
+
   .main-contente{
     flex-wrap: wrap;
     flex-direction: column;
@@ -292,8 +293,8 @@ footer{
     margin: 5px 0;
   }
     
-      .content12 .text{
-        margin-top: -40%;
+ .content12 .text{
+        margin-top: 20%;
         font-size: 30px;
         font-weight: 600;
         color: #202020;
@@ -346,7 +347,7 @@ footer{
         }
         
             .content12 .text{
-              margin-top: -40%;
+              margin-top: 10%;
               font-size: 30px;
               font-weight: 600;
               color: #202020;
@@ -384,3 +385,4 @@ footer{
               margin: 30px;
             }
         }
+
