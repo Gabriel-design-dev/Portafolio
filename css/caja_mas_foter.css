@@ -1,49 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 html{
   scroll-behavior: smooth;
 }
 
 
-/*/PARA RESPONSIVEs /*/
-.caja-portada{
-    position: relative;
-  margin: 60px auto;
-  text-align: center;
-  padding: 0 20px;
-  margin-left: 20px;
+/*/PARA RESPONSIVE /*/
 
-  }
-  .caja-portada .texto{
-    font-size: 80px;
-  font-weight: 400;
-  color: #ffffff;
-  font-family: 'Kaushan Script', cursive;
+/*PORTADA NUEVA INICIO**/
+.portada-nuevo{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background: #091016;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, rgba(133, 28, 28, 0.514), rgba(0, 0, 0, 0.521)),url(../IMG/fondo2.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, rgba(128, 21, 46, 0.438), rgb(1, 26, 46)),url(../IMG/fondo2.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  object-fit: cover; 
+  background-size: auto 290%; /* Reducir el tamaño de la imagen al 50% de la altura de la caja */
+  background-position: center bottom; /* Posicionar la imagen en el centro horizontal y en la parte inferior vertical */
+  background-repeat: no-repeat; 
   
   }
-  .caja-portada .parrafo{
-    margin-left: 15%;
-    font-size: 37px;
-  font-weight: 200;
-  color: #eec79b;
-  font-family: 'Kaushan Script', cursive;
+  .contenido-nuevo{
+      height: 300px;
+      color: white;  
+      position: relative;
+     
   }
-  .caja-portada .parrafos{
-    margin-left: 10%;
-    font-size: 37px;
-  font-weight: 200;
-  color: #ffc18f;
-  font-family: 'Kaushan Script', cursive;
+  .contenido-nuevo h1{
+      font-family: 'Kaushan Script', cursive;
+      font-size: 49px;
+      color: rgb(247, 239, 127);
   }
-  .imagen-portada{
-    background-color: #000;
-    position: absolute;
-    width: 100%;
-    height: 75%;
-    object-fit: cover; 
-
+  .contenido-nuevo p{
+      font-size: 25px;
+      font-family: 'Kaushan Script', cursive;
   }
+  /*PORTADA NUEVA FIN**/
   /*/PARA RESPONSIVE /*/
 .content12{
   position: relative;
@@ -236,35 +230,7 @@ footer{
   .main-contente .boxe{
     margin: 5px 0;
   }
-  .caja-portada{
-    position: relative;
-  margin: 130px auto;
-  text-align: center;
-  padding: 0 20px;
-   
-  }
-  .caja-portada .texto{
-    margin-top: -120px;
-    font-size: 20px;
-  font-weight: 400;
-  color: #ffffff;
-  }
-  .caja-portada .parrafo{
-    font-size: 30px;
-  font-weight: 200;
-  color: #ffffff;
-  margin-top: -80px;
-  margin-bottom: 10%;
-  }
-  .imagen-portada{
-    background: rgba(1, 1, 2, 0.616);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(105, 14, 37, 0.555), rgba(10, 14, 17, 0.548)),url(../IMG/fondo2.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(78, 13, 29, 0.603), rgba(8, 10, 12, 0.521)),url(../IMG/fondo2.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    object-fit: cover; 
-  } 
+  
   .content12 .text{
     margin-top: -23%;
     font-size: 30px;
@@ -309,6 +275,15 @@ footer{
     bottom: 0px;
     
   }
+  .contenido-nuevo h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 39px;
+    color: rgb(247, 239, 127);
+}
+.contenido-nuevo p{
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+}
   .main-contente{
     flex-wrap: wrap;
     flex-direction: column;
@@ -316,51 +291,7 @@ footer{
   .main-contente .boxe{
     margin: 5px 0;
   }
-    .caja-portada{
-        position: relative;
-      margin: 130px auto;
-      text-align: center;
-      padding: 0 20px;
-     
-      }
-      .caja-portada .parrafos{
-        font-size: 20px;
-      font-weight: 200;
-      color: #f5e481;
-      margin-top: -23%;
-      margin-bottom: 30px;
-      }
-      .caja-portada .texto{
-        margin-top: -10%;
-        font-size: 29px;
-      font-weight: 400;
-      color: #ffffff;
-      font-family: 'Kaushan Script', cursive;
-      margin-bottom: 9px;
-      }
-      .caja-portada .parrafo{
-       
-        font-size: 18px;
-      font-weight: 200;
-      color: #f3dda1;
-      margin-top: -2%;
-      margin-left: -20px;
-      margin-right: -20px;
-      }
-      
-      .imagen-portada{
-        background: rgba(1, 1, 2, 0.616);  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, rgba(105, 14, 37, 0.555), rgba(10, 14, 17, 0.548)),url(../IMG/fondo2.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, rgba(78, 13, 29, 0.603), rgba(8, 10, 12, 0.521)),url(../IMG/fondo2.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-        position: absolute;
-        width: 100%;
-        height: 42%;
-        object-fit: cover;
-        background-size: auto 147%; /* Reducir el tamaño de la imagen al 50% de la altura de la caja */
-        background-position: center bottom; /* Posicionar la imagen en el centro horizontal y en la parte inferior vertical */
-        background-repeat: no-repeat; 
-      }
+    
       .content12 .text{
         margin-top: -40%;
         font-size: 30px;
@@ -413,51 +344,7 @@ footer{
         .main-contente .boxe{
           margin: 5px 0;
         }
-          .caja-portada{
-              position: relative;
-            margin: 130px auto;
-            text-align: center;
-            padding: 0 20px;
-           
-            }
-            .caja-portada .parrafos{
-              font-size: 15px;
-            font-weight: 200;
-            color: #f5e481;
-            margin-top: -23%;
-            margin-bottom: 30px;
-            }
-            .caja-portada .texto{
-              margin-top: -10%;
-              font-size: 22px;
-            font-weight: 400;
-            color: #ffffff;
-            font-family: 'Kaushan Script', cursive;
-            margin-bottom: 9px;
-            }
-            .caja-portada .parrafo{
-             
-              font-size: 18px;
-            font-weight: 200;
-            color: #f3dda1;
-            margin-top: -2%;
-            margin-left: -20px;
-            margin-right: -20px;
-            }
-            
-            .imagen-portada{
-              background: rgba(1, 1, 2, 0.616);  /* fallback for old browsers */
-              background: -webkit-linear-gradient(to right, rgba(105, 14, 37, 0.555), rgba(10, 14, 17, 0.548)),url(../IMG/fondo2.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
-              background: linear-gradient(to right, rgba(78, 13, 29, 0.603), rgba(8, 10, 12, 0.521)),url(../IMG/fondo2.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-              
-              position: absolute;
-              width: 100%;
-              height: 42%;
-              object-fit: cover;
-              background-size: auto 147%; /* Reducir el tamaño de la imagen al 50% de la altura de la caja */
-              background-position: center bottom; /* Posicionar la imagen en el centro horizontal y en la parte inferior vertical */
-              background-repeat: no-repeat; 
-            }
+        
             .content12 .text{
               margin-top: -40%;
               font-size: 30px;
