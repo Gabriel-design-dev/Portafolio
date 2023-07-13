@@ -64,6 +64,7 @@
               <p class="text-center">Ing. de Sistemas</p>
           </div>
        </section>
+       
        <div class="content12">
           <div class="text">Informacion Personal</div>
           <div class="pe">¡Bienvenido!</div>
@@ -315,6 +316,7 @@
   </div>
 </section><br>
 <!---SECCION FUNCIONES-->
+<!---SECCION FUNCIONES-->
 <h2 class="text-center subtitulo">Trabajos y Proyectos Realizados</h2> <br>
 <section class="tarjetas" >
     <div class="tarjeta">
@@ -325,7 +327,7 @@
         <h3 class="text-center">Modelo de Deteccion De Ataques Phishing</h3>
         <p class="text-justify">Se creo un modelo para la deteccion de ataques phishing con tecnicas de machine learning
           para reducir las estafas y engaños por parte de los atacante informaticos. El Modelo fue realizado Python y Machine Learning 
-        </p><br><br>
+        </p>
         <a class="btn btn-success" href="#">Concluido</a>
       </div>
     </div>
@@ -349,7 +351,7 @@
         <h3 class="text-center">Diseño de Afiches, Panfletos</h3>
         <p class="text-justify">Se desarrollo Afiches, Panfletos para Promocionar cursos y Seminarios para el Instituto Corea.
           El diseño fue realizado en Photoshop CC y Canva.
-        </p><br><br><br><br>
+        </p>
         <a class="btn btn-success" href="#">Concluido</a>
       </div>
     </div>
@@ -361,7 +363,7 @@
         <h3 class="text-center">Diseño de </h3>
         <p class="text-justify">Se desarrollo un sistema de informacion de control de planillas para la institucion "BELA" para el control de todo 
           el personal administrativo. El sistema fue creado con el lenguaje de programacion Php.
-        </p><br><br>
+        </p>
         <a class="btn btn-success" href="#">Concluido</a>
       </div>
     </div>
@@ -398,6 +400,39 @@
     </div>
   </section>
 </div>
+<!---DISEÑOS REALIZADOS --> <br>
+<h2 class="text-center subtitulo">Diseños Realizados</h2> <br>
+
+  <section class="tarjetas" >
+    <div class="tarjeta">
+      <div class="imagen">
+        <img src="IMG/cursos/1.jpeg" alt="Imagen 1">
+      </div>
+    </div>
+    <div class="tarjeta">
+      <div class="imagen">
+        <img src="IMG/cursos/2.jpeg" alt="Imagen 2">
+      </div>
+     
+    </div>
+    <div class="tarjeta">
+      <div class="imagen">
+        <img src="IMG/cursos/3.jpeg" alt="Imagen 3">
+      </div>
+  
+    </div>
+    <div class="tarjeta">
+      <div class="imagen">
+        <img src="IMG/cursos/4.jpeg" alt="Imagen 4">
+      </div>
+    </div>
+    <div class="tarjeta">
+      <div class="imagen">
+        <img src="IMG/cursos/5.jpeg" alt="Imagen 4">
+      </div>
+    </div>
+  </section>
+
       <!----FOOOTEEER----->
       <footer>
         <div class="main-contente">
@@ -463,5 +498,20 @@
       
       <script src="js/scripts.js"></script>
       <script src="https://kit.fontawesome.com/7325a27477.js" crossorigin="anonymous"></script>
+      <script>
+        const imagenes = document.querySelectorAll('.imagen');
+
+imagenes.forEach((imagen) => {
+  imagen.addEventListener('mousemove', (e) => {
+    const { offsetX, offsetY } = e;
+    const { width, height } = imagen.getBoundingClientRect();
+    const x = (offsetX / width) * 100;
+    const y = (offsetY / height) * 100;
+    imagen.style.transformOrigin = `${x}% ${y}%`;
+  });
+});
+
+      
+      </script>
 </body>
 </html>
