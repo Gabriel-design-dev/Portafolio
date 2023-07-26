@@ -35,24 +35,26 @@
     <nav>
         <div class="menu-icon">
            <span class="fas fa-bars"></span>
+           <div class="cancel-icon">
+            <span class="fas fa-bars"></span>
+         </div>
         </div>
         <div class="logo">
-           <h1 class="text-center">Gabriel</h1>
+           <h2 class="navbar-gab">Gabriel</h2>
         </div>
         <div class="nav-items">
            <li><a id="playButton" href="index.html">Inicio</a></li>
            <li> <a style="color:rgb(218, 50, 50);" href="https://www.youtube.com/c/GABRIELHD-ING-SISTEMAS/videos"><span class="fab fa-youtube"></span> Canal de Youtube</a></li>
-         <li><a href="https://drive.google.com/file/d/1KlUvv4W7yFx1ZUva_e2zITYdM5UTGNsx/view?usp=drive_link">Descargar Cv</a></li>
+         <li><a href="https://drive.google.com/file/d/1CN_oX7rqhtN2YNjY2pKeF6MYgMysW472/view?usp=drive_link">Descargar Cv</a></li>
+    
            <!--<li><a id="playButton" href="crud.html">Serie Crud PHP</a></li>-->
           <!-- <li><a id="playButton" href="crud.html">Serie Crud Python</a></li>-->
         
         </div>
         <div class="search-icon">
-           <span class="fas fa-search"></span>
+          
         </div>
-        <div class="cancel-icon">
-           <span class="fas fa-times"></span>
-        </div>
+      
      </nav>
        <!--cabecera fin-->
        <!--PORTADA NUEVA INICIO-->
@@ -74,30 +76,52 @@
 <br>
 
     <script>
-        const menuBtn = document.querySelector(".menu-icon span");
-        const searchBtn = document.querySelector(".search-icon");
-        const cancelBtn = document.querySelector(".cancel-icon");
-        const items = document.querySelector(".nav-items");
-        const form = document.querySelector("form");
-        menuBtn.onclick = ()=>{
-          items.classList.add("active");
-          menuBtn.classList.add("hide");
-          searchBtn.classList.add("hide");
-          cancelBtn.classList.add("show");
-        }
-        cancelBtn.onclick = ()=>{
-          items.classList.remove("active");
-          menuBtn.classList.remove("hide");
-          searchBtn.classList.remove("hide");
-          cancelBtn.classList.remove("show");
-          form.classList.remove("active");
-          cancelBtn.style.color = "#ff3d00";
-        }
-        searchBtn.onclick = ()=>{
-          form.classList.add("active");
-          searchBtn.classList.add("hide");
-          cancelBtn.classList.add("show");
-        }
+      const menuBtn = document.querySelector(".menu-icon span");
+const searchBtn = document.querySelector(".search-icon");
+const cancelBtn = document.querySelector(".cancel-icon");
+const items = document.querySelector(".nav-items");
+const form = document.querySelector("form");
+
+
+menuBtn.onclick = () => {
+  items.classList.add("active");
+  menuBtn.classList.add("hide");
+  searchBtn.classList.add("hide");
+  cancelBtn.classList.add("show");
+};
+
+cancelBtn.onclick = () => {
+  items.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  searchBtn.classList.remove("hide");
+  cancelBtn.classList.remove("show");
+  form.classList.remove("active");
+  cancelBtn.style.color = "#ff3d00";
+};
+
+searchBtn.onclick = () => {
+  form.classList.add("active");
+  searchBtn.classList.add("hide");
+  cancelBtn.classList.add("show");
+};
+
+// Agregar un evento de clic al documento
+document.addEventListener("click", (event) => {
+  // Verificar si el clic se realizó dentro del navbar o dentro del formulario de búsqueda
+  if (event.target.closest("nav") || event.target.closest("form")) {
+    // Si es así, no hagas nada, ya que el navbar o el formulario están visibles
+    return;
+  }
+
+  // Si el clic se realizó fuera del navbar y del formulario de búsqueda, oculta ambos
+  items.classList.remove("active");
+  form.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  searchBtn.classList.remove("hide");
+  cancelBtn.classList.remove("show");
+  cancelBtn.style.color = "#ff3d00";
+});
+
      </script>
   <br><br>
   <div transition-style class="--in-custom">
@@ -127,7 +151,7 @@
             <br>
              <div class="text-center">
               <a class="btn btn-success" href="https://wa.me/78819752?text=Buenos%20dias">WhatsApp</a>
-              <a class="btn btn-danger " href="https://drive.google.com/file/d/1KlUvv4W7yFx1ZUva_e2zITYdM5UTGNsx/view?usp=drive_link">Descargar CV</a>
+              <a class="btn btn-danger " href="https://drive.google.com/file/d/1CN_oX7rqhtN2YNjY2pKeF6MYgMysW472/view?usp=drive_link">Descargar CV</a>
              </div>
         </div>
       </div>
@@ -137,7 +161,7 @@
   </div>
     <!---PROYECTOS REALIZADOS-->
     <div transition-style class="--in-custom">
-<section  class="tarjetitas1">
+<section id="areas_trabajo" class="tarjetitas1">
   <div class="tarjetitas2">
     <div class="icono3 text-center">
       <span class="fa fa-laptop-code"></span>
@@ -360,7 +384,7 @@
         <img src="IMG/BELA.jpg" alt="Imagen 4">
       </div>
       <div class="contenido">
-        <h3 class="text-center">Desarrollo de Sistema de Informacion </h3>
+        <h3 class="text-center">Diseño de </h3>
         <p class="text-justify">Se desarrollo un sistema de informacion de control de planillas para la institucion "BELA" para el control de todo 
           el personal administrativo. El sistema fue creado con el lenguaje de programacion Php.
         </p>
@@ -406,29 +430,29 @@
   <section class="tarjetas" >
     <div class="tarjeta">
       <div class="imagen">
-        <img src="IMG/1.jpeg" alt="Imagen 1">
+        <img src="IMG/cursos/1.jpeg" alt="Imagen 1">
       </div>
     </div>
     <div class="tarjeta">
       <div class="imagen">
-        <img src="IMG/2.jpeg" alt="Imagen 2">
+        <img src="IMG/cursos/2.jpeg" alt="Imagen 2">
       </div>
      
     </div>
     <div class="tarjeta">
       <div class="imagen">
-        <img src="IMG/3.jpeg" alt="Imagen 3">
+        <img src="IMG/cursos/3.jpeg" alt="Imagen 3">
       </div>
   
     </div>
     <div class="tarjeta">
       <div class="imagen">
-        <img src="IMG/4.jpeg" alt="Imagen 4">
+        <img src="IMG/cursos/4.jpeg" alt="Imagen 4">
       </div>
     </div>
     <div class="tarjeta">
       <div class="imagen">
-        <img src="IMG/5.jpeg" alt="Imagen 4">
+        <img src="IMG/cursos/5.jpeg" alt="Imagen 4">
       </div>
     </div>
   </section>
