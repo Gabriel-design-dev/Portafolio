@@ -141,7 +141,7 @@ background: -webkit-linear-gradient(to left, rgba(5, 31, 71, 0.993), rgba(0, 0, 
 background: linear-gradient(to left, rgb(3, 29, 49), rgba(0, 0, 0, 0.973)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     display: inline-block;
-    transition: left 0.3s ease;
+    transition: left 3s ease;
   }
   nav .nav-items.active{
     margin-top: -10px;
